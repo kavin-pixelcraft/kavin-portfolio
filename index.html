@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kavin | Frontend Developer</title>
+
+  <meta name="description"
+    content="Kavin's personal portfolio showcasing frontend development skills and projects.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .type-caret { display: none; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar container" aria-label="Primary">
+      <a href="#home" class="brand">
+        <span class="brand-mark">K</span>
+        <span class="brand-name">Kavin<span class="brand-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">
+          Let's talk
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Toggle navigation"
+          aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero Section -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="hero-kicker">Frontend Developer</p>
+
+        <h1 class="hero-name">Kavin</h1>
+
+        <p class="hero-role">
+          I am a
+          <span class="type-wrap"><span class="type-text" id="type-text">Frontend Developer</span><span
+              class="type-caret" aria-hidden="true"></span></span>
+        </p>
+
+        <p class="hero-lead">
+          I'm Kavin, an aspiring frontend developer from India. I build
+          clean, responsive websites with HTML, CSS and JavaScript, and
+          I'm looking for an internship or junior role to keep growing.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">
+            About me
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            Contact me
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16v12H4zM4 7l8 6 8-6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-portrait">
+        <div class="portrait-frame">
+          <img src="profile.jpg" alt="Portrait of Kavin" width="520" height="520">
+          <span class="portrait-fallback" aria-hidden="true">K</span>
+        </div>
+        <span class="portrait-badge">
+          <span class="status-dot"></span>
+          Open to work
+        </span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section container" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span>01</span> About</p>
+        <h2 class="section-title">A little about me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="lead">
+            I'm Kavin, an aspiring frontend developer based in India. I
+            enjoy turning ideas into neat, responsive websites that are
+            easy to use on any screen.
+          </p>
+          <p>
+            I learn by building — every project is a chance to practise
+            layout, accessibility and writing cleaner code. Right now I'm
+            looking for an internship or junior role where I can keep
+            growing as a developer.
+          </p>
+        </div>
+
+        <aside class="facts-card reveal" style="--delay: .1s">
+          <dl class="facts">
+            <div>
+              <dt>Role</dt>
+              <dd>Frontend Developer</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Responsive UI &amp; layout</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>HTML · CSS · JavaScript</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>India</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd class="open-status"><span class="status-dot"></span> Open to work</dd>
+            </div>
+          </dl>
+
+          <a href="#contact" class="facts-link">
+            Say hello
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section container" id="skills">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span>02</span> Expertise</p>
+        <h2 class="section-title">My skills</h2>
+        <p class="section-lead">
+          A practical foundation, built through hands-on practice.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card card reveal">
+          <div class="skill-head">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 6l-4 6 4 6M16 6l4 6-4 6" />
+              </svg>
+            </span>
+            <h3>Structure</h3>
+          </div>
+          <ul class="chips">
+            <li>HTML5</li>
+            <li>Semantic markup</li>
+            <li>Forms</li>
+            <li>Accessibility</li>
+          </ul>
+        </article>
+
+        <article class="skill-card card reveal" style="--delay: .08s">
+          <div class="skill-head">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h16M4 12h10M4 17h16" />
+              </svg>
+            </span>
+            <h3>Styling</h3>
+          </div>
+          <ul class="chips">
+            <li>CSS3</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Media queries</li>
+          </ul>
+        </article>
+
+        <article class="skill-card card reveal" style="--delay: .16s">
+          <div class="skill-head">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" />
+              </svg>
+            </span>
+            <h3>Interactivity</h3>
+          </div>
+          <ul class="chips">
+            <li>JavaScript</li>
+            <li>DOM</li>
+            <li>Events</li>
+          </ul>
+        </article>
+
+        <article class="skill-card card reveal" style="--delay: .24s">
+          <div class="skill-head">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="2.5" />
+                <circle cx="6" cy="18" r="2.5" />
+                <circle cx="18" cy="8" r="2.5" />
+                <path d="M6 8.5v7M18 10.5c0 3.5-4 3-6 4" />
+              </svg>
+            </span>
+            <h3>Tools</h3>
+          </div>
+          <ul class="chips">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section container" id="projects">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span>03</span> Work</p>
+        <h2 class="section-title">What I've built</h2>
+      </div>
+
+      <article class="project-card card reveal">
+        <div class="project-visual" aria-hidden="true">
+          <div class="browser-mock">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="browser-body">
+              <span class="mock-line w-60"></span>
+              <span class="mock-line w-90"></span>
+              <span class="mock-line w-75"></span>
+              <span class="mock-pill"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-tag">Personal project</span>
+            <span class="project-year">2026</span>
+          </div>
+
+          <h3>Personal Portfolio</h3>
+
+          <p>
+            The site you're looking at — built from scratch with HTML,
+            CSS and JavaScript to present who I am and what I can do in a
+            clear, readable way.
+          </p>
+
+          <ul class="chips project-chips">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section container" id="contact">
+      <div class="contact-panel reveal">
+        <p class="eyebrow"><span>04</span> Contact</p>
+        <h2 class="section-title">Let's talk</h2>
+        <p>
+          Open to internships, junior roles and small website projects.
+          Email is the quickest way to reach me.
+        </p>
+
+        <a class="contact-email" href="mailto:kavin.pixelcraft@gmail.com">
+          kavin.pixelcraft@gmail.com
+        </a>
+
+        <div class="contact-actions">
+          <a href="mailto:kavin.pixelcraft@gmail.com" class="btn btn-primary">
+            Send me an email
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16v12H4zM4 7l8 6 8-6" />
+            </svg>
+          </a>
+
+          <button class="btn btn-outline" type="button" id="copy-email" data-email="kavin.pixelcraft@gmail.com">
+            Copy email
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="11" height="11" rx="2" />
+              <path d="M15 9V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7a2 2 0 002 2h3" />
+            </svg>
+          </button>
+        </div>
+
+        <p class="contact-hint" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">K</span>
+        <span class="brand-name">Kavin<span class="brand-dot">.</span></span>
+      </a>
+
+      <p class="footer-copy">
+        © <span id="year"></span> Kavin. Built with HTML, CSS &amp; JavaScript.
+      </p>
+
+      <a href="#home" class="back-top" aria-label="Back to top">
+        Back to top
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 19V5M6 11l6-6 6 6" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
